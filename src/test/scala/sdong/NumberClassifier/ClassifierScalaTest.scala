@@ -1,23 +1,23 @@
 package sdong.NumberClassifier
 
-import sdong.NumberClassifier
-import org.scalatest._
-import _root_.junit.framework.Test
+import org.junit.Assert._
+import org.junit.Test
+import org.scalatest.junit.AssertionsForJUnit
 /**
   * Created by shendong on 2017/3/29.
   */
-class ClassifierScalaTest {
+class ClassifierScalaTest extends AssertionsForJUnit {
 
   @Test def negative_perfection() {
     for (i <- 1 until 10000)
       if (Set(6, 28, 496, 8128).contains(i))
-        assertTrue(NumberClassifier.isPerfect(i))
+        assertTrue(ClassifierScala.isPerfect(i))
       else
-        assertFalse(NumberClassifier.isPerfect(i))
+        assertFalse(ClassifierScala.isPerfect(i))
   }
-  @Test def alternate_perfection() {
+ @Test def alternate_perfection() {
     assertEquals(List(6, 28, 496, 8128),
-      (1 until 10000) filter (NumberClassifier.isPerfect(_)))
+      (1 until 10000) filter (ClassifierScala.isPerfect(_)))
   }
 
 }
