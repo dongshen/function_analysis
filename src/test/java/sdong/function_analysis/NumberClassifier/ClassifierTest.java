@@ -1,13 +1,15 @@
 package sdong.function_analysis.NumberClassifier;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.*;
+import sdong.function_analysis.exception.ProjectException;
 
 public class ClassifierTest {
 
