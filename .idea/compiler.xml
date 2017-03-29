@@ -9,7 +9,7 @@
         <module name="function_analysis" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="function_analysis" target="1.5" />
     </bytecodeTargetLevel>
   </component>
